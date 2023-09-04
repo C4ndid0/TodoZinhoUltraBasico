@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/todos")
 public class TodoController {
 
-    private TodoService todoService;
+    final private TodoService todoService;
 
     public TodoController(TodoService todoService) {
         this.todoService = todoService;
